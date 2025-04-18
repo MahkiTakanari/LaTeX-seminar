@@ -1,30 +1,23 @@
-# uplatex でコンパイル（日本語 + UTF-8）
+# uplatex でコンパイル（UTF-8対応）
 $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S';
 
-# BibTeX / Biber の設定（どちらも対応）
+# 文献処理
 $bibtex = 'upbibtex %O %B';
 $biber  = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
 
-# makeindex（索引作成）
+# 索引
 $makeindex = 'upmendex %O -o %D %S';
 
+# 出力ディレクトリ
 $out_dir = "out";
 
-
-# DVI → PDF の変換
+# DVI → PDF
 $dvipdf = 'dvipdfmx %O -o %D %S';
-
-# PDFの生成方法：DVI → PDF
 $pdf_mode = 3;
 
-# プレビュー設定（Windows）
+# プレビュー（Windows）
 $pdf_previewer = 'start %S';
 
-# SyncTeX対応ビューアを推奨（例：SumatraPDF）
-# $pdf_previewer = 'SumatraPDF -reuse-instance';
-
-# 自動再コンパイル時のプレビュー動作
+# クリーン設定
 $pvc_view_file_via_temporary = 0;
-
-# clean 時に削除する補助ファイル
 $clean_full_ext = "%R.synctex.gz %R.fdb_latexmk %R.fls";

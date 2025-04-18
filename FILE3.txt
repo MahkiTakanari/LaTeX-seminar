@@ -10,23 +10,6 @@
     
     // latex-workshop.latex.tools: Tool の定義
     "latex-workshop.latex.tools": [
-      
-        // latexmk を利用した lualatex によるビルドコマンド
-        {
-          "name": "Latexmk (LuaLaTeX)",
-          "command": "latexmk",
-          "args": [
-            "-f", "-gg", "-lualatex", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
-          ]
-        },
-        // latexmk を利用した xelatex によるビルドコマンド
-        {
-          "name": "Latexmk (XeLaTeX)",
-          "command": "latexmk",
-          "args": [
-            "-f", "-gg", "-xelatex", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
-          ]
-        },
         // latexmk を利用した uplatex によるビルドコマンド
         {
           "name": "Latexmk (upLaTeX)",
@@ -48,21 +31,6 @@
 
     // latex-workshop.latex.recipes: Recipe の定義
     "latex-workshop.latex.recipes": [
-        // LuaLaTeX で書かれた文書のビルドレシピ
-        {
-          "name": "LuaLaTeX",
-          "tools": [
-            "Latexmk (LuaLaTeX)"
-          ]
-        },
-        // XeLaTeX で書かれた文書のビルドレシピ
-        {
-          
-          "name": "XeLaTeX",
-          "tools": [
-            "Latexmk (XeLaTeX)"
-          ]
-        },
         // LaTeX(upLaTeX) で書かれた文書のビルドレシピ
         {
           "name": "upLaTeX",
