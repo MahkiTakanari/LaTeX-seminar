@@ -1,0 +1,45 @@
+\documentclass{ltjsarticle}
+\begin{document}
+
+\title{はじめての\TeX }
+\author{Namae Wo Nyuryoku}
+\maketitle
+
+\section{\TeX は意外とカンタン}
+
+これは \TeX のテスト文書です。  
+ただ文章を書いていくだけで、自然と整った見た目になります。
+
+\subsection{小見出しもすぐに作れます}
+
+文章量が増えても、自動的に読みやすく整えてくれるのが \TeX の便利なところです。  
+もちろん、数式だって簡単に書けます。
+
+\begin{equation}
+    f(x) = x^2 + 2x + 1
+\end{equation}
+
+↑ `equation` 環境で囲むだけで、こんなふうにきれいな数式が出力されます。
+
+\subsection{表も作れます（ちょっとだけめんどう）}
+
+表も作れますが、少しだけ書き方にコツがいります。  
+といっても、基本形を覚えてしまえばそんなに難しくありません。
+
+\begin{table}[htbp]
+  \centering
+  \caption{サンプル表}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    項目 & 値1 & 値2 \\
+    \hline
+    A & 10 & 20 \\
+    B & 30 & 40 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+↑ こんな感じで、`tabular` 環境を使って記述します。  
+最初はちょっと面倒に感じるかもしれませんが、テンプレートとして覚えてしまえば大丈夫です。
+
+\end{document}

@@ -1,0 +1,15 @@
+\documentclass{ltjsarticle}
+\begin{document}
+
+\title{\LaTeX ビルドテスト}
+\author{Namae Wo Nyuryoku}
+\maketitle
+
+これは、\LaTeX をコマンドラインからビルドしてみるための最小限のテストです。
+PDFが無事に生成されていれば成功です！次の文章との間に１行空行を入れると改段落します。
+
+この文章は特に何の意味もありませんが、ちゃんと改行されて、文書っぽく見えるのが \LaTeX のいいところです。
+
+今はまだシンプルですが、ここからいろいろできるようになります。
+
+\end{document}
