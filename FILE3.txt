@@ -112,4 +112,4 @@
     "latex-workshop.intellisense.package.enabled": true,
 
     // 生成ファイルを "out" ディレクトリに吐き出す
-    "latex-workshop.latex.outDir": "out",
+    "latex-workshop.latex.outDir": "out"
