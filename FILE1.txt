@@ -1,4 +1,4 @@
-\documentclass{ltjsarticle}
+\documentclass{jsarticle}
 \begin{document}
 
 \title{\LaTeX ビルドテスト}
