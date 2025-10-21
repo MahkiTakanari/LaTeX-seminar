@@ -7,7 +7,7 @@
     //   Tool: 実行される1つのコマンド。コマンド (command) と引数 (args) で構成される
     //   Recipe: Tool の組み合わわせを定義する。Tool の組み合わせ (tools) で構成される。
     //           tools の中で利用される Tool は "latex-workshop.latex.tools" で定義されている必要がある。
-    
+
     // latex-workshop.latex.tools: Tool の定義
     "latex-workshop.latex.tools": [
         // latexmk を利用した uplatex によるビルドコマンド
@@ -112,4 +112,4 @@
     "latex-workshop.intellisense.package.enabled": true,
 
     // 生成ファイルを "out" ディレクトリに吐き出す
-    "latex-workshop.latex.outDir": "out"
+    "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/out"
